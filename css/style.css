@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     list-style: none;
+    text-decoration: none;
 }
 header {
     display: flex;
@@ -66,6 +67,7 @@ main ul img {
 }
 main ul p {
     font-weight: 700;
+    color: #161616;
 }
 main ul span {
     color: #5ca720;
@@ -87,8 +89,9 @@ main li {
     flex-direction: column;
     gap: 10px;
 }
-.container-footer1 p{
+.container-footer1 a{
     font-weight: 700;
+    color: #161616;
 }
 .network img {
     width: 28px;
@@ -107,6 +110,7 @@ main li {
 }
 .newsletter label {
     font-weight: 700;
+    color: #161616;
 }
 .newsletter p {
     margin-top: 12px;
