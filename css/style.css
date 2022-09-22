@@ -100,7 +100,7 @@ main ul li {
     transition: all .3s;
 }
 main ul li:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 main ul img {
     width: 250px;
@@ -235,6 +235,10 @@ main li {
     main {
         flex-direction: column;
         padding: 30px 0 70px 7%;
+        gap: 30px;
+    }
+    main ul p {
+        font-size: 1.5rem;
     }
     main ul img {
         width: 100%;
