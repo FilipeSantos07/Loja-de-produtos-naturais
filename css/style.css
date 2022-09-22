@@ -21,22 +21,42 @@ header {
     width: 100%;
     flex-wrap: wrap;
 }
+header nav a:nth-child(1) {
+    animation: fromRight 1.2s ;
+}
+header nav a:nth-child(2) {
+    animation: fromRight 1.2s .2s backwards;
+}
+header nav a:nth-child(3) {
+    animation: fromRight 1.2s .4s backwards;
+}
 #banner {
     width: 100%;
+    animation: fromLeft 1.2s .2s backwards;
 }
 .logo {
     display: flex;
     align-items: center;
     gap: 5px;
 }
+.logo img {
+    animation: fromLeft 1.2s .2s backwards;
+}
 .logo span {
     font-size: 17px;
     font-weight: 700;
+    animation: fromLeft 1.2s ;
 }
 header nav {
     display: flex;
     align-items: center;
     gap: 30px;
+}
+header nav a {
+    transition: all .3s;
+}
+header nav a:hover {
+    transform: scale(1.3);
 }
 section {
     overflow-x: hidden;
@@ -65,6 +85,21 @@ main ul {
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+main ul:nth-child(1) {
+    animation: fromBottom 1.2s .2s backwards;
+}
+main ul:nth-child(2) {
+    animation: fromTop 1.2s .2s backwards;
+}
+main ul:nth-child(3) {
+    animation: fromBottom 1.2s .2s backwards;
+}
+main ul li {
+    transition: all .3s;
+}
+main ul li:hover {
+    transform: scale(1.1);
 }
 main ul img {
     width: 250px;
@@ -154,6 +189,47 @@ main li {
     height: 1px;
     background: #ddd;
 }
+@keyframes fromLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fromRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fromBottom {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fromTop {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 @media only screen and (max-width:700px) {
     main {
         flex-direction: column;
