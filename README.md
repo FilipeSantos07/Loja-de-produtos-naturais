@@ -15,4 +15,4 @@ Mais um treinamento de HTML e CSS. Fiz a primeira vez seguindo um tutorial, depo
 
 ## 💛 Contato
 
-outerspaceguy@live.co.uk
+FilipeSantosEstudos1@gmail.com
